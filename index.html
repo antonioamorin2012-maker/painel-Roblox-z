@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Militar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Painel Militar</h1>
+    <p>Sistema de promoções Roblox</p>
+
+    <div class="perfil">
+        <img id="avatarAdmin" src="">
+        <p id="cargoAdmin">Seu cargo aparecerá aqui</p>
+    </div>
+
+    <input id="nick" type="text" placeholder="Seu nick Roblox">
+
+    <div class="perfil">
+        <img id="avatarAlvo" src="">
+        <p id="cargoAlvo">Cargo do militar aparecerá aqui</p>
+    </div>
+
+    <input id="alvo" type="text" placeholder="Nick do militar">
+
+    <select id="cargo">
+        <option value="">Carregando cargos...</option>
+    </select>
+
+    <textarea id="motivo" placeholder="Motivo obrigatório"></textarea>
+
+    <button onclick="acao('promover')">Promover</button>
+    <button onclick="acao('rebaixar')">Rebaixar</button>
+    <button onclick="acao('banir')">Remover / Exonerar</button>
+
+    <div id="resposta"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
